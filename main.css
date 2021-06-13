@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: rgb(103 19 218);
+}
+
+.container {
+    text-align: center;
+}
+
+.row .col-sm-4 {
+    padding: 20px 10px;
+    font-size: 10em;
+    width: 100%;
+    max-width: 300px;
+    border: rgb(103 19 218) solid 10px;
+    color: rgb(103 19 218);
+}
+ 
+
