@@ -27,6 +27,8 @@ p {
     max-width: 300px;
     border: rgb(103 19 218) solid 10px;
     color: rgb(103 19 218);
+    margin-left: 10px;
+    box-shadow: 10px 10px 5px grey;
 }
  
 
