@@ -1,31 +1,44 @@
-// console.log(boxes);
+var boxes = document.getElementsByClassName("col-sm-4");
+console.log(boxes);
 
-// document.getElementsByClassName("boxes").addEventListener("mouseover", function() {
-//     boxes[0].classList.add("box-white");
+// document.getElementsByClassName("col-sm-4").addEventListener("mouseover", function() {
+//     boxes[0].classList.toggle("box-white");
 // });
+
+// boxes[0].addEventListener("mouseenter",
+//     function () {
+//         var colorChange = document.getElementsByClassName("col-sm-4");
+//         colorChange.classList.toggle("box-white");
+//     }
+// );
+
+function colorChange () {
+    boxes[0].classList.toggle("box-white");
+}
+
+for(i=0; i<boxes.length; i++){
+    boxes[i].addEventListener("mouseenter", colorChange);
+    boxes[i].addEventListener("mouseleave", colorChange);
+}
     
 
 // document.getElementsByClassName("col-sm-4").addEventListener("mouseout", function() {
 //     document.getElementsByClassName("col-sm-4").style.backgroundColor = "red";
 // });
 
-
-var boxes = document.getElementsByClassName("col-sm-4");
-console.log(boxes);
-
 // for(i=0; i<boxes.length; i++){
-//     boxes[i].addEventListener("mouseenter", function(){ document.getElementsByClassName("col-sm-4").style.backgroundColor = "white"; });
-//     boxes[i].addEventListener("mouseleave", function(){ document.getElementsByClassName("col-sm-4").style.backgroundColor = "black"; });
-//     }
+// boxes[i].addEventListener("mouseenter", 
+//     function() {
+//         var colorChange = document.getElementsByClassName("col-sm-4");
+//         colorChange.classList.toggle("box-white");
+//       });
+    // function() {
+    //     document.getElementsByClassName("col-sm-4").style.backgroundColor = "white"; });
+    // boxes[i].addEventListener("mouseleave", function(){ document.getElementsByClassName("col-sm-4").style.backgroundColor = "black"; });
+    // }
 
 var newPara = document.createElement("p");
 newPara.innerHTML = "";
-
-// boxes[0].addEventListener("click",
-//     function() {
-//         document.getElementsByClassName("container-fluid").appendChild(newPara);
-//     }, false
-// );
 
 document.getElementById("box1").addEventListener("click",
     function() {
@@ -47,9 +60,3 @@ document.getElementById("box3").addEventListener("click",
         newPara.innerHTML = "Oops, butter luck next time";
     }, false 
 );
-
-boxes[0].addEventListener("click", function(){document.getElementsByClassName("message").innerHTML = "Oooh - so close, but no cigar"; });
-
-// boxes[1].addEventListener("click", function(){ alert("DING DING DING - We have a winner");})
-
-// boxes[2].addEventListener("click", function(){ alert("Oops, butter luck next time");})
