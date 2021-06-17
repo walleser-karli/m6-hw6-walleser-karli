@@ -46,5 +46,26 @@ p {
 .box-white {
     background-color: white;
 }
+
+.hidden-button {
+    display:none;
+}
+
+button {
+    background-color: orangered;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 17px;
+  }
+  
+  button a {
+      text-decoration: none;
+      color: white;
+  }
  
 
