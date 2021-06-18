@@ -35,12 +35,11 @@ p {
     background-color: yellow;
 }
 
-
-#box2 {
+.boxstyle2 {
     background-color: turquoise;
 }
 
-#box3 {
+.boxstyle3 {
     background-color: limegreen;
 }
 
